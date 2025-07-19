@@ -1,0 +1,13 @@
+# Archivos compilados y de configuración de Java/Maven
+/backend/target/
+/backend/bin/
+*.class
+*.log
+
+# Archivos de configuración de Eclipse
+.project
+.classpath
+.settings/
+
+# Archivos de configuración de VSCode (por las dudas)
+.vscode/

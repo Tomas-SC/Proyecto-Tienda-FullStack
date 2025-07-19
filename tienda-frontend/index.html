@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestión de la Tienda</h1>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="form-agregar-producto">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoría:</label>
+                    <input type="text" id="categoria" name="categoria" required>
+                </div>
+                 <div class="form-group">
+                    <label for="imagenUrl">URL de Imagen:</label>
+                    <input type="text" id="imagenUrl" name="imagenUrl" placeholder="Pegar URL de la imagen aquí" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock:</label>
+                    <input type="number" id="stock" name="stock" required>
+                </div>
+                <button type="submit">Guardar Producto</button>
+            </form>
+        </div>
+
+        <h2>Catálogo de Productos</h2>
+        <div id="tabla-container">
+            <table id="tabla-productos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Imagen</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Proyecto Final de Back-End - 2025</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

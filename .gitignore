@@ -1,18 +1,18 @@
-# Ignorar archivos compilados y de configuración de Java/Maven
+
 /backend/target/
 /backend/bin/
 *.class
 *.log
 
-# Ignorar archivos de configuración de Eclipse
+
 .project
 .classpath
 .settings/
 
-# Ignorar archivos de configuración de otros IDEs (buena práctica)
+
 .idea/
 .vscode/
 *.iml
 
-# Ignorar el archivo con la contraseña de la base de datos
+
 /backend/src/main/resources/application.properties
